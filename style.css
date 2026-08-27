@@ -44,7 +44,7 @@ li {
 .container img {
   height: 100%;
   width: 100%;
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 3;
   object-fit: cover;
   z-index: 2;
   -webkit-box-shadow: 1px 5px 10px 4px rgba(0, 0, 0, 0.34);
