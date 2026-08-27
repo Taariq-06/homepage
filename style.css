@@ -18,18 +18,19 @@ li {
 /**About me Section **/
 .about-me {
   padding: 112px 80px;
+  position: relative;
+  overflow: hidden;
 }
 
 .about-me::before {
   content: "";
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
   width: 100%;
-  height: 875px;
+  height: 100%;
   background: #0077b6;
-  transform: skewY(-11deg) translateY(-300px);
+  transform: skewY(-11deg) translateY(-30%);
   transform-origin: top;
 }
 
@@ -37,12 +38,13 @@ li {
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 20px 268.75px 268.75px 20px;
+  grid-template-rows:  repeat(4,auto);
 }
 
 .container img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
   z-index: 2;
   grid-row: 1 / span 4;
   -webkit-box-shadow: 1px 5px 10px 4px rgba(0, 0, 0, 0.34);
@@ -69,7 +71,7 @@ li {
 .para-text p {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .para-text .icons {
@@ -79,6 +81,6 @@ li {
 }
 
 .para-text .icons i {
-  font-size: 32px;
+  font-size: 2rem;
   cursor: pointer;
 }
