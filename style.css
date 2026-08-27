@@ -35,7 +35,8 @@ li {
 }
 
 .about-me .container {
-  max-width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows:  2rem auto auto 2rem;
