@@ -16,19 +16,38 @@ li {
 }
 img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
-h1 {
+h1, h2, h3 {
   font-family: "Playfair Display", serif;
+}
+
+h2 {
+  font-size: 2rem;
 }
 i {
   font-size: 1.75rem;
   cursor: pointer;
 }
-/**About me Section **/
+
+/** Header **/
+header {
+  padding-top: 32px;
+  display: flex;
+  background-color: #0077b6;
+  color: antiquewhite;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+/** About me Section **/
 .about-me {
-  padding: 32px 64px;
+  padding: 32px 64px 64px;
   position: relative;
   overflow: hidden;
 }
@@ -87,20 +106,42 @@ i {
 /* My Work Section */
 .my-work {
   display: grid;
+  grid-template-columns: 100%;
+  gap: 24px;
   padding: 32px 64px;
 }
 
 .project-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+  justify-content: center;
+  gap: 28px;
 }
 
 .project-cards li {
-  max-height: 250px;
   -webkit-box-shadow: 1px 5px 10px 4px rgba(0, 0, 0, 0.34);
   box-shadow: 1px 5px 10px 4px rgba(0, 0, 0, 0.2);
   background-color: antiquewhite;
+}
+
+.card-info {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  padding: 16px;
+  row-gap: 12px;
+}
+
+.card-info p {
+  grid-column: 1 / span 2;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+
+.icons {
+  justify-self: flex-end;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
 }
 
 .icons img {
