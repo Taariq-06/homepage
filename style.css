@@ -47,7 +47,7 @@ h1 {
 
 /** About me Section **/
 .about-me {
-  padding: 32px 64px 64px;
+  padding: 32px 64px 72px;
   position: relative;
   overflow: hidden;
 }
@@ -106,24 +106,28 @@ h1 {
 /* My Work Section */
 .my-work {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 85%;
+  justify-content: center;
   gap: 24px;
   padding: 32px 64px;
 }
 
 .project-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   justify-content: center;
-  gap: 28px;
+  gap: 40px;
 }
 
 .project-cards li {
   -webkit-box-shadow: 1px 5px 10px 4px rgba(0, 0, 0, 0.34);
   box-shadow: 1px 5px 10px 4px rgba(0, 0, 0, 0.2);
   background-color: antiquewhite;
+  transition: transform .2s ease;
 }
-
+ .project-cards li:hover {
+  transform: scale(1.1);
+ }
 .card-info {
   display: grid;
   grid-template-columns: 1fr max-content;
