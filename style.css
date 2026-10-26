@@ -208,6 +208,10 @@ h1 {
   gap: 17px;
   color: black;
 }
+
+.social-logos i {
+  font-size: 40px;
+}
 .contact_right {
   width: 1000px;
   height: 600px;
